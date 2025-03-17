@@ -1,0 +1,58 @@
+body {
+    font-family: 'Roboto', sans-serif; /* Use Google Fonts */
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    color: white;
+    padding: 1rem;
+}
+
+nav ul {
+    display: none; /* Hidden for mobile */
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+}
+
+nav a:hover {
+    color: #FFD700; /* Hover Effect */
+}
+
+main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+
+figure {
+    margin: 0;
+    text-align: center;
+}
+h1 {
+    text-align: center;
+}
+
+footer {
+    text-align: center;
+}

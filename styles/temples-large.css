@@ -1,0 +1,8 @@
+nav ul {
+    display: flex; /* Display menu items horizontally */
+    gap: 1rem;
+}
+
+.gallery {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
