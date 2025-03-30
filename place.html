@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discover Nigeria</title>
+    <link rel="stylesheet" href="styles/place.css">
+    <script src="scripts/place.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Discover Nigeria</h1>
+    </header>
+    <main>
+        <section class="hero">  <div class="bg_image"></div>
+            <picture>
+                
+                <source class="bg_img" srcset="images/nigeria-large4.webp 600w, images/nigeria-large4.webp 1200w" sizes="(max-width: 600px) 600px, 1200px"> 
+                <img src="images/nigeria-large4.webp" alt="Beautiful Nigerian Landscape">
+            </picture>
+        </section>
+        <section class="info">
+            <h2>About Nigeria</h2>
+
+            <ul> 
+                <li><strong>Area:</strong> 923,768 km²</li>
+                <li><strong>Population:</strong> Over 213 million</li>
+                <li><strong>Capital:</strong> Abuja</li>
+                <li><strong>Languages:</strong> English (official), Hausa, Igbo, Yoruba</li>
+                <li><strong>Currency:</strong> Nigerian Naira (NGN)</li>
+                <li><strong>Time Zone:</strong> West Africa Time (WAT) UTC+1</li>
+                <li><strong>Calling Code:</strong> +234</li>
+                <li><strong>Internet TLD:</strong> .ng</li>
+            </ul>
+        </section>
+        <section class="weather">
+            <h2>Weather <span class="weather-icon">⛅</span></h2>
+            <p>Temperature: 25°C</p>
+            <p>Wind Speed: 6 km/h</p>
+            <p>Wind Chill: <span id="windchill"></span></p>
+            <div class="mobile-weather">
+                <img src="images/weather-icon.svg" alt="Weather Icon" class = "mobile-weather-icon">
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; <span id="currentYear"></span> Chinedu Kingsley Amuji | Last Modified: <span id="lastModified"></span></p>
+    </footer>
+</body>
+</html>

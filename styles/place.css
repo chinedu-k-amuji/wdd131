@@ -1,0 +1,105 @@
+/* styles/place.css */
+
+:root {
+    --primary-color: #008751; /* Green from the Nigerian flag */
+    --secondary-color: #ffffff; /* White from the Nigerian flag */
+    --text-color: #333;
+    --background-color: #f4f4f4;
+}
+
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    color: var(--text-color);
+    background-color: var(--background-color);
+}
+
+header {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    text-align: center;
+    padding: 1rem 0;
+}
+
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+.hero img {
+    width: 100%;
+    height: 500px;
+    display: block;
+}
+
+
+
+.info {
+    background-color: var(--secondary-color);
+    padding: 0px 20px;
+    position: absolute;
+    top: 30%;
+    margin-left: 1%;
+    margin-bottom: 2rem;
+    
+    width: 200px;
+}
+
+.info ul {
+    list-style: none;
+    padding: 0;
+  
+    top: 40%;
+}
+
+/* .info li {
+    margin-bottom: 0.5rem;
+} */
+
+.weather {
+    background-color: var(--secondary-color);
+    padding: 1rem;
+    position: absolute;
+    top: 60%;
+    right: 6%;
+    margin-bottom: 1rem;
+   
+    width: 200px;
+}
+
+.weather h2 {
+    display: flex;
+    align-items: center;
+}
+
+.weather-icon {
+    margin-left: 0.5rem;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem 0;
+    background-color: var(--primary-color); /* Green from the Nigerian flag */
+}
+.mobile-weather{
+    display: none;
+}
+
+@media (max-width: 600px) {
+    main {
+        padding: 0.5rem;
+    }
+    .weather-icon{
+        display: none;
+    }
+    .mobile-weather{
+        display: block;
+        text-align: center;
+    }
+    .mobile-weather img{
+        width: 50px;
+        height: 50px;
+    }
+}
