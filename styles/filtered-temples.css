@@ -10,6 +10,11 @@ body {
     padding: 10px 0;
   }
   
+  header h1 {
+    text-align: center;
+    margin: 0;
+  }
+  
   header nav ul {
     list-style-type: none;
     display: flex;
@@ -22,7 +27,7 @@ body {
     margin: 0 10px;
   }
   
-  header nav ul li button {
+  header nav ul li a {
     background: none;
     color: white;
     border: none;
@@ -30,7 +35,8 @@ body {
     font-size: 1rem;
   }
   
-  header nav ul li button:hover {
+  header nav ul li a:hover {
+    color: white;
     text-decoration: underline;
   }
   

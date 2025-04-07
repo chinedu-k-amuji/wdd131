@@ -6,22 +6,26 @@
   <meta name="description" content="WDD 131 – Dynamic Web Fundamentals by Chinedu Kingsley Amuji. A web design of some selected temples and there info-data.">
   <meta name="author" content="Chinedu Kingsley Amuji">
   <title>Filtered Temples</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
   <link  href="styles/filtered-temples.css" rel="stylesheet">
   <script src="scripts/filtered-temples.js" defer></script>
 </head>
 <body>
   <header>
+    <h1>Temples Around the World</h1>
     <nav>
       <ul>
-        <li><button onclick="displayAll()">Home</button></li>
-        <li><button onclick="filterByOld()">Old</button></li>
-        <li><button onclick="filterByNew()">New</button></li>
-        <li><button onclick="filterByLarge()">Large</button></li>
-        <li><button onclick="filterBySmall()">Small</button></li>
+        <li><a href="#" onclick="displayAll()">Home</a></li>
+        <li><a href="#" onclick="filterByOld()">Old</a></li>
+        <li><a href="#" onclick="filterByNew()">New</a></li>
+        <li><a href="#" onclick="filterByLarge()">Large</a></li>
+        <li><a href="#" onclick="filterBySmall()">Small</a></li>
       </ul>
     </nav>
   </header>
-  <main id="temples-container"></main>
+  <main id="temples-container">
+    <h2>Temple Information</h2>
+  </main>
   <footer>
     <p>&copy; <span id="year"></span>, Chinedu Kingsley Amuji, Nigeria. <span id="last-modified"></span></p>
   </footer>
