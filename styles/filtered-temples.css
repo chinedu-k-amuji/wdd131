@@ -53,7 +53,6 @@ body {
     width: 100%;
     height: auto;
     object-fit: cover;
-    lazyload: true;
   }
   
   .temple-card h2, .temple-card p {
