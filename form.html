@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="WDD 131 – Dynamic Web Fundamentals by Chinedu Kingsley Amuji. A form design.">
+    <meta name="author" content="Chinedu Kingsley Amuji">
+    <title>Product Review Form</title>
+    <link rel="stylesheet" href="styles/form.css">
+    <script src="scripts/form.js" defer></script>
+</head>
+<body>
+    <h1>Product Review Form</h1>
+    <form method="get" action="form-review.html">
+        <!-- Product Name -->
+        <label for="productName">Product Name:</label>
+        <select id="productName" name="productName" required>
+            <option disabled selected>Select a Product ...</option>
+        </select>
+
+        <!-- Overall Rating -->
+        <fieldset>
+            <legend>Overall Rating:</legend>
+            <input type="radio" id="rating1" name="rating" value="1" required>
+            <label for="rating1">1 &star;</label>
+            <input type="radio" id="rating2" name="rating" value="2">
+            <label for="rating2">2 &star;&star;</label>
+            <input type="radio" id="rating3" name="rating" value="3">
+            <label for="rating3">3 &star;&star;&star;</label>
+            <input type="radio" id="rating4" name="rating" value="4">
+            <label for="rating4">4 &star;&star;&star;&star;</label>
+            <input type="radio" id="rating5" name="rating" value="5">
+            <label for="rating5">5 &star;&star;&star;&star;&star;</label>
+        </fieldset>
+
+        <!-- Date of Installation -->
+        <label for="installationDate">Date of Installation:</label>
+        <input type="date" id="installationDate" name="installationDate" required>
+
+        <!-- Useful Features -->
+        <fieldset>
+            <legend>Useful Features: Select the ones you find useful</legend>
+            <input type="checkbox" id="Durability" name="Durability" value="Durability">
+            <label for="feature1">Durability</label>
+            <input type="checkbox" id="feature2" name="feature" value="Feature 2">
+            <label for="feature2">Ease of Use</label>
+            <input type="checkbox" id="feature3" name="feature" value="Feature 3">
+            <label for="feature3">Performance</label>
+        </fieldset>
+
+        <!-- Written Review -->
+        <label for="writtenReview">Written Review:</label>
+        <textarea id="writtenReview" name="writtenReview"></textarea>
+
+        <!-- User Name -->
+        <label for="userName">Your Name:</label>
+        <input type="text" id="userName" name="userName">
+
+        <!-- Submit Button -->
+        <input type="submit" value="Submit Review">
+        
+    </form>
+    <footer>
+        <p>&copy; <span id="currentYear"></span>, Chinedu Kingsley Amuji, Enugu State, Nigeria</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>
+
+
