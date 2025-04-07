@@ -1,0 +1,68 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+  }
+  
+  header nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header nav ul li {
+    margin: 0 10px;
+  }
+  
+  header nav ul li button {
+    background: none;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+  }
+  
+  header nav ul li button:hover {
+    text-decoration: underline;
+  }
+  
+  main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  .temple-card {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    overflow: hidden;
+    width: 300px;
+  }
+  
+  .temple-card img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    lazyload: true;
+  }
+  
+  .temple-card h2, .temple-card p {
+    margin: 10px;
+  }
+
+  footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}

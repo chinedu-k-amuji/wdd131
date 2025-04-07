@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="WDD 131 – Dynamic Web Fundamentals by Chinedu Kingsley Amuji. A web design of some selected temples and there info-data.">
+  <meta name="author" content="Chinedu Kingsley Amuji">
+  <title>Filtered Temples</title>
+  <link  href="styles/filtered-temples.css" rel="stylesheet">
+  <script src="scripts/filtered-temples.js" defer></script>
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><button onclick="displayAll()">Home</button></li>
+        <li><button onclick="filterByOld()">Old</button></li>
+        <li><button onclick="filterByNew()">New</button></li>
+        <li><button onclick="filterByLarge()">Large</button></li>
+        <li><button onclick="filterBySmall()">Small</button></li>
+      </ul>
+    </nav>
+  </header>
+  <main id="temples-container"></main>
+  <footer>
+    <p>&copy; <span id="year"></span>, Chinedu Kingsley Amuji, Nigeria. <span id="last-modified"></span></p>
+  </footer>
+  <script src="filtered-temples.js"></script>
+</body>
+</html>
