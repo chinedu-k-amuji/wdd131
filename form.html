@@ -7,11 +7,12 @@
     <meta name="author" content="Chinedu Kingsley Amuji">
     <title>Product Review Form</title>
     <link rel="stylesheet" href="styles/form.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <script src="scripts/form.js" defer></script>
 </head>
 <body>
     <h1>Product Review Form</h1>
-    <form method="get" action="form-review.html">
+    <form method="get" action="review.html">
         <!-- Product Name -->
         <label for="productName">Product Name:</label>
         <select id="productName" name="productName" required>
@@ -46,6 +47,8 @@
             <label for="feature2">Ease of Use</label>
             <input type="checkbox" id="feature3" name="feature" value="Feature 3">
             <label for="feature3">Performance</label>
+            <input type="checkbox" id="feature4" name="feature" value="Reliability">
+            <label for="feature4">Reliability</label>
         </fieldset>
 
         <!-- Written Review -->
@@ -57,8 +60,7 @@
         <input type="text" id="userName" name="userName">
 
         <!-- Submit Button -->
-        <input type="submit" value="Submit Review">
-        
+        <input type="submit" value="Submit">
     </form>
     <footer>
         <p>&copy; <span id="currentYear"></span>, Chinedu Kingsley Amuji, Enugu State, Nigeria</p>
@@ -66,5 +68,3 @@
     </footer>
 </body>
 </html>
-
-
