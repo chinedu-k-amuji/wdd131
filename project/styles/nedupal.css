@@ -50,10 +50,10 @@ header nav ul li a:hover {
 /* Hero Section */
 .hero {
     position: relative;
-    background: url(/project/images/nedupal\ shop2.jpg) repeat center center;
+     /* background: url('/project/images/nedupal_shop2.jpg') repeat center center; 
     background-size: cover;
-    height: 80vh;
-    width: 100%;
+    height: 80vh; */
+    width: 100%; 
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -61,12 +61,21 @@ header nav ul li a:hover {
     color: white;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
 }
-
+.bag_img{
+   width: 100%;
+}
 .hero h2 {
     font-size: 36px;
     margin-bottom: 10px;
 }
 
+.hero .banner_text{
+     position: absolute;
+     font-size: 15px;
+     text-align: center;
+     top: 40%;
+  
+}
 .hero button {
     padding: 10px 20px;
     background-color: #333;
@@ -220,4 +229,16 @@ footer nav img {
 
 footer nav img:hover {
     transform: scale(1.2);
+}
+
+@media screen and (min-width: 1200px) {
+   
+
+    .bag_img{
+        width: 100%;
+        height: 80vh; /* Make hero section take full viewport height */
+        object-fit: cover; /* Adjust background size */
+    }
+
+   
 }
