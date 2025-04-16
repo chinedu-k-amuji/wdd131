@@ -1,0 +1,161 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Header */
+header {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #f8f8f8;
+    border-bottom: 2px solid #ccc;
+}
+
+header h1 {
+    flex: 1;
+    font-size: 24px;
+    color: #333;
+}
+
+header nav ul {
+    display: flex;
+    list-style: none;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    padding: 10px 15px;
+    color: #555;
+    transition: color 0.3s ease;
+}
+
+header nav ul li a:hover {
+    color: #000;
+}
+
+/* Logo Style */
+.logo {
+    position: absolute;
+    left: 20px;
+    top: 50px;
+    width: 100px;
+    height: 100px;
+    z-index: 9999;
+}
+
+/* Hero Section */
+.hero {
+    position: relative;
+    background: url(/project/images/nedupal\ shop2.jpg) repeat center center;
+    background-size: cover;
+    height: 80vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.hero h2 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.hero button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.hero button:hover {
+    background-color: #555;
+}
+*/
+/* Featured Products Section */
+.products {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px 20px;
+}
+
+.products h3 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+    position: relative;
+    top: 20px;
+}
+
+/* Product Carousel */
+#product-carousel {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+
+#product-carousel figure {
+    width: 200px;
+    text-align: center;
+}
+
+#product-carousel img {
+    width: 200px; /* Ensuring uniform width */
+    height: 200px; /* Ensuring uniform height */
+    object-fit: cover; /* Maintains aspect ratio without distortion */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#product-carousel figcaption {
+    margin-top: 8px;
+    font-size: 14px;
+    color: #555;
+}
+
+/* Footer Section */
+footer {
+    background-color: #f8f8f8;
+    border-top: 2px solid #ccc;
+    text-align: center;
+    padding: 20px 10px;
+}
+
+footer p {
+    margin: 10px 0;
+    font-size: 14px;
+    color: #555;
+}
+
+footer a {
+    text-decoration: none;
+    color: #333;
+    margin-right: 10px;
+}
+
+footer a:hover {
+    color: #000;
+}
+
+footer nav img {
+    width: 30px;
+    height: auto;
+    margin: 0 10px;
+    transition: transform 0.3s ease;
+}
+
+footer nav img:hover {
+    transform: scale(1.2);
+}
